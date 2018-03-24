@@ -9,13 +9,13 @@ import { CardsComponent } from './components/cards/cards.component';
 
 const routes: Routes = [
   {
-    path: 'cards', component: TestAppComponent,
+    path: 'testApp', component: TestAppComponent,
     children: [
       { path: "cards", component: CardsComponent },
       { path: "**", redirectTo: 'cards' }
     ]
   },
-  { path: '**', redirectTo: 'cards' }
+  { path: '**', redirectTo: 'testApp' }
 ]
 
 @NgModule({
