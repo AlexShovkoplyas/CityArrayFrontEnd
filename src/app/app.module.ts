@@ -1,11 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from "@angular/router";
+import { Routes, RouterModule } from "@angular/router";
 
-// ?????
-import { HttpClientModule } from '@angular/common/http'
-
-import { TestModule } from "./tests/test.module";
+// import { TestModule } from "./tests/test.module";
 import { AppComponent } from './app.component';
 
 const routes : Routes = [
@@ -19,9 +16,8 @@ const routes : Routes = [
   ],
   imports: [
     BrowserModule,
-    TestModule,
-    RouterModule.forChild(routes),    
-    HttpClientModule
+    // TestModule,
+    RouterModule.forRoot(routes),    
   ],
   providers: [],
   bootstrap: [AppComponent]
