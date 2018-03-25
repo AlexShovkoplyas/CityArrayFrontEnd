@@ -1,0 +1,11 @@
+<mat-button-toggle-group #group="matButtonToggleGroup" [(value)]="contentView" (valueChange)="onViewChange($event)">
+  <mat-button-toggle value="1" aria-label="cards">
+    <mat-icon>view_module</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="2" aria-label="table">
+    <mat-icon>view_headline</mat-icon>
+  </mat-button-toggle>
+  <mat-button-toggle value="3" aria-label="list">
+    <mat-icon>format_list_bulleted</mat-icon>
+  </mat-button-toggle>
+</mat-button-toggle-group>

@@ -1,0 +1,13 @@
+.container {
+    width: 90%;
+    margin:auto;
+  }
+
+  /* .card {
+    width: 200px;
+  } */
+
+  div[fxFlex]{
+    padding: 10px;
+  }
+

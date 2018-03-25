@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button #sideButton mat-icon-button (click)="appSide.isCollapsed()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>CityArray</span>
+    <span class="example-spacer"></span>
+    <!-- <mat-icon class="example-icon">favorite</mat-icon>
+    <mat-icon class="example-icon">delete</mat-icon> -->
+    <app-logging></app-logging>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<app-sidenav #appSide ></app-sidenav>
