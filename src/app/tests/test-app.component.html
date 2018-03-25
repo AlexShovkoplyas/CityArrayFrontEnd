@@ -1,0 +1,8 @@
+<p>
+  test-app works!
+</p>
+<div class="container">
+  <ng-container *ngFor='let data of reviews'>
+    <app-cards [review]='data'></app-cards>
+  </ng-container>
+</div>

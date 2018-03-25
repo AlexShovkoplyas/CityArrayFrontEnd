@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from "@angular/router";
+import { MaterialModule } from '../shared/material.module';
 
 import { TestAppComponent } from './test-app.component';
 import { CardsComponent } from './components/cards/cards.component';
+
 
 
 const routes: Routes = [
@@ -20,6 +22,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    MaterialModule,
     RouterModule.forChild(routes)
   ],
 
