@@ -11,3 +11,19 @@
     padding: 10px;
   }
 
+  .sort-button{
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+  .section-title{
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 5px ;
+    background-color: lightblue;
+    margin-bottom: 10px;
+  }
+
+  .flex-empty{
+    flex: 1 1 0;
+  }

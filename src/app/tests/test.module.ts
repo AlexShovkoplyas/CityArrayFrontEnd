@@ -5,12 +5,13 @@ import { MaterialModule } from '../shared/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { TestAppComponent } from './test-app.component';
-import { CardsComponent } from './components/cards/cards.component';
+import { CardReviewComponent } from './components/cards/card-review/card-review.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoggingComponent } from './components/logging/logging.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ContentComponent } from './components/content/content.component';
 import { LayoutToggleComponent } from './components/layout-toggle/layout-toggle.component';
+import { SortMenuComponent } from './components/sort-menu/sort-menu.component';
 
 
 
@@ -20,7 +21,7 @@ const routes: Routes = [
   {
     path: 'testApp', component: TestAppComponent,
     children: [
-      { path: "cards", component: CardsComponent },
+      { path: "cards", component: CardReviewComponent },
       { path: "**", redirectTo: 'cards' }
     ]
   },
@@ -37,12 +38,13 @@ const routes: Routes = [
 
   declarations: [
     TestAppComponent,
-    CardsComponent,
+    CardReviewComponent,
     NavbarComponent,
     LoggingComponent,
     SidenavComponent,
     ContentComponent,
-    LayoutToggleComponent
+    LayoutToggleComponent,
+    SortMenuComponent
   ]
 })
 export class TestModule { }

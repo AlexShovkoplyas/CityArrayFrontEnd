@@ -1,0 +1,10 @@
+#direction {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.sort-panel{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}

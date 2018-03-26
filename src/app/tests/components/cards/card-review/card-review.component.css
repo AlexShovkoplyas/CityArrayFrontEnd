@@ -1,0 +1,15 @@
+
+mat-card {
+    height:100%; 
+    /* padding: 0px; */
+    position: relative;
+}
+
+.bookmark {
+    position: absolute;
+    right: 12px;
+    top:12px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+

@@ -1,0 +1,14 @@
+<div class="sort-panel">
+  
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>sort_by_alpha</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item *ngFor="let item of dataList" (click)="changeSort(item)">
+      <span>{{item}}</span>
+    </button>
+  </mat-menu>
+
+  <mat-icon id="direction" (click)="changeDirection()">{{sortDirection? "arrow_downward" : "arrow_upward"}}</mat-icon>
+
+</div>

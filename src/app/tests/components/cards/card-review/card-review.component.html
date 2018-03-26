@@ -1,6 +1,10 @@
 <mat-card class="card" fxLayout="column" > 
   <!--  -->
+  <mat-icon class="bookmark" (click)="toggleBookmark()" > {{saved ? "bookmark" : "bookmark_border"}}</mat-icon>
+  
   <mat-card-header>
+
+    
 
     <mat-card-title>{{review.city}}</mat-card-title>
     <mat-card-subtitle>{{review.person}}</mat-card-subtitle>

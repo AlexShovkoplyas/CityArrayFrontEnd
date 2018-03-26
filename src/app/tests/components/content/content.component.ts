@@ -16,7 +16,7 @@ export enum ContentView {
 export class ContentComponent implements OnInit {
 
   contentView: ContentView;
- 
+
   reviews: ReviewInfo[];
 
   constructor(private reviewsService: ReviewsService) { }
@@ -24,10 +24,25 @@ export class ContentComponent implements OnInit {
   getReviews(): void {
     this.reviews = this.reviewsService.GetReviews();
   }
+  sortList: string[];
+
+  changeSortField(field : string){
+    console.log("Change sort field : " + field);
+  }
+
+  changeSortDirection(direction : boolean){
+    console.log("Change sort direction : " + direction);
+  }
+
 
   ngOnInit() {
     this.getReviews();
     this.contentView = ContentView.cards;
+    let r =new ReviewInfo();
+    r.city="Lviv";
+    r.person="Alex";
+    this.sortList = ReviewInfo.SortFiesldList;
+    console.log(this.sortList);
   }
 
 }

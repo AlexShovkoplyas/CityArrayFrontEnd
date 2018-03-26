@@ -13,6 +13,9 @@ export class Review {
 }
 
 export class ReviewInfo {
+
+    static SortFiesldList = ["city","person"];
+
     city : string;
     // cityid : number;
     person : string;
@@ -21,5 +24,8 @@ export class ReviewInfo {
 
     imgPath : string;
     
-    commentsCount : number;    
+    commentsCount : number;  
+    // creationDate : Date;
+    
+    
 }

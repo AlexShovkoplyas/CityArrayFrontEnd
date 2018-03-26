@@ -1,5 +1,14 @@
+<div class=" mat-display-1 section-title">
+  <span class="">Reviews</span>
 
-<app-layout-toggle [(contentView)] = "contentView" ></app-layout-toggle>
+  <span class="flex-empty"></span>
+
+  <app-sort-menu [dataList]="sortList" (sortChange)="changeSortField($event)" (directionChange)="changeSortDirection($event)"></app-sort-menu>
+
+  <app-layout-toggle [(contentView)]="contentView"></app-layout-toggle>
+</div>
+
+
 
 
 <div *ngIf="contentView==1">
